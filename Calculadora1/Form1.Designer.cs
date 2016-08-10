@@ -74,6 +74,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "CE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -263,6 +264,7 @@
             this.button23.TabIndex = 23;
             this.button23.Text = ".";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 

@@ -195,42 +195,33 @@ namespace Calculadora
 
                 }
                 else if (Operacion == 5)
-                { //Si se ha presionado el boton de la "suma"
+                { //Si se ha presionado el boton de la "cos"
 
-                    Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
-                    actualizar_pantalla(operar(Num1, Num2, "cos").ToString());
-                    Is1 = false;
+                    actualizar_pantalla(operar(Num1, 0, "cos").ToString());
 
                 }
                 else if (Operacion == 6)
                 { //Si se ha presionado el boton de la "suma"
 
-                    Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
-                    actualizar_pantalla(operar(Num1, Num2, "sen").ToString());
-                    Is1 = false;
+                  //actualizar_pantalla(operar(Num1, 0, "sen").ToString());
 
                 }
                 else if (Operacion == 7)
                 { //Si se ha presionado el boton de la "suma"
 
-                    Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
-                    actualizar_pantalla(operar(Num1, Num2, "log").ToString());
-                    Is1 = false;
+                    actualizar_pantalla(operar(Num1, 0, "log").ToString());
 
                 }
                 else if (Operacion == 8)
                 { //Si se ha presionado el boton de la "suma"
 
-                    Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
-                    actualizar_pantalla(operar(Num1, Num2, "ln").ToString());
-                    Is1 = false;
+                    actualizar_pantalla(operar(Num1, 0, "ln").ToString());
 
                 }
                 else if (Operacion == 9)
                 { //Si se ha presionado el boton de la "suma"
 
-                    Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
-                    actualizar_pantalla(operar(Num1, Num2, "tan").ToString());
+                    actualizar_pantalla(operar(Num1, 0, "tan").ToString());
                     Is1 = false;
 
                 }
@@ -282,11 +273,12 @@ namespace Calculadora
                     break;
 
                 case "cos":
-                    Resultado = Math.Acos(operador1);
+                    
+                    Resultado = Math.Cos(operador1);
                     break;
                 
                 case "sen":
-                    Resultado = Math.Asin(operador1);
+                    Resultado = Math.Sin(operador1);
                     break;
                 
                 case "log":
@@ -313,56 +305,49 @@ namespace Calculadora
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (!Is1)
-            {
-                Num1 = obtener_valor();
-                Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 5;          // "5" indicara la operacion seno
-            }
+
+            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+
+            actualizar_pantalla(operar(Num1, 0, "sen").ToString()); 
+            
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (!Is1)
-            {
-                Num1 = obtener_valor();
-                Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 6;          // "6" indicara la operacion coseno
-            }
+
+            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+
+            actualizar_pantalla(operar(Num1, 0, "cos").ToString());
+
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (!Is1)
-            {
-                Num1 = obtener_valor();
-                Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 7;          // "7" Logaritmo base 10
-            }
+            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+
+            actualizar_pantalla(operar(Num1, 0, "log").ToString());
+
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (!Is1)
-            {
-                Num1 = obtener_valor();
-                Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 8;          // "8" Logaritmo base exp(1)
-            }
+            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+
+            actualizar_pantalla(operar(Num1, 0, "ln").ToString());
+
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            if (!Is1)
-            {
-                Num1 = obtener_valor();
-                Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 9;          // "9" tangente de un numero
-            }
+
+            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+
+            actualizar_pantalla(operar(Num1, 0, "tan").ToString());
+
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
 
@@ -375,6 +360,16 @@ namespace Calculadora
                 Operacion = 10;          // "10" exponente de un numero
             }
             Pantalla.Focus(); //Regresamos el focus a la pantalla
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            actualizar_pantalla(",");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            limpiar_pantalla();
         }
     }
 }
