@@ -1,0 +1,9 @@
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.Calculadora.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.Cache
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\usuario\AppData\Local\Temporary Projects\Calculadora\obj\Debug\Calculadora.pdb
