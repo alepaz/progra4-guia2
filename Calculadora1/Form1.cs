@@ -209,25 +209,6 @@ namespace Calculadora
                 else if (Operacion == 7)
                 { //Si se ha presionado el boton de la "suma"
 
-                    actualizar_pantalla(operar(Num1, 0, "log").ToString());
-
-                }
-                else if (Operacion == 8)
-                { //Si se ha presionado el boton de la "suma"
-
-                    actualizar_pantalla(operar(Num1, 0, "ln").ToString());
-
-                }
-                else if (Operacion == 9)
-                { //Si se ha presionado el boton de la "suma"
-
-                    actualizar_pantalla(operar(Num1, 0, "tan").ToString());
-                    Is1 = false;
-
-                }
-                else if (Operacion == 10)
-                { //Si se ha presionado el boton de la "suma"
-
                     Num2 = obtener_valor(); //Para obtener el segundo operando de la operacion suma
                     actualizar_pantalla(operar(Num1, Num2, "exp").ToString());
                     Is1 = false;
@@ -357,7 +338,7 @@ namespace Calculadora
             {
                 Num1 = obtener_valor();
                 Is1 = true;             //Actualizamos el valor de la variable de control
-                Operacion = 10;          // "10" exponente de un numero
+                Operacion = 7;          // "10" exponente de un numero
             }
             Pantalla.Focus(); //Regresamos el focus a la pantalla
         }
