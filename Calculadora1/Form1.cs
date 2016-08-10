@@ -35,9 +35,25 @@ namespace Calculadora
 
         public double obtener_valor() { //Para transformar lo que se digite en el textbox a formato
                                         //numerico
-            
-            double valor = Convert.ToDouble(Pantalla.Text);
-            limpiar_pantalla();
+            double valor = 0;
+                
+            if (Pantalla.Text.Length > 0)
+                {
+                    if (double.TryParse(Pantalla.Text, out valor))
+                    {
+                        valor = Convert.ToDouble(Pantalla.Text);
+                        limpiar_pantalla();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingrese un numero");
+                    }
+                    
+                }
+                else {
+                    MessageBox.Show("El control se encuentra vacio"); 
+                }
+   
             return valor;
         
         }
@@ -287,12 +303,13 @@ namespace Calculadora
         private void button7_Click(object sender, EventArgs e)
         {
 
-            Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
+           Num1 = obtener_valor(); //Obtenemos el valor anterior ingresado
 
-            actualizar_pantalla(operar(Num1, 0, "sen").ToString()); 
+           actualizar_pantalla(operar(Num1, 0, "sen").ToString()); 
             
-            Pantalla.Focus(); //Regresamos el focus a la pantalla
-        }
+           Pantalla.Focus(); //Regresamos el focus a la pantalla
+
+         }
 
         private void button12_Click(object sender, EventArgs e)
         {
