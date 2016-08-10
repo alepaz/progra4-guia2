@@ -282,27 +282,27 @@ namespace Calculadora
                     break;
 
                 case "cos":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Acos(operador1);
                     break;
                 
                 case "sen":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Asin(operador1);
                     break;
                 
                 case "log":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Log10(operador1);
                     break;
                 
                 case "ln":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Log(operador1);
                     break;
                 
                 case "tan":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Tan(operador1);
                     break;
 
                 case "exp":
-                    Resultado = operador1 / operador2;
+                    Resultado = Math.Pow(operador1,operador2);
                     break;
 
             }
@@ -375,7 +375,6 @@ namespace Calculadora
                 Operacion = 10;          // "10" exponente de un numero
             }
             Pantalla.Focus(); //Regresamos el focus a la pantalla
-        }
         }
     }
 }
