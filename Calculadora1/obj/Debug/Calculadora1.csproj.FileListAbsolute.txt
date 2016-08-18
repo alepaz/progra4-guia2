@@ -7,3 +7,12 @@ C:\Users\usuario\Downloads\Calculadora1\Calculadora1\Calculadora1\bin\Debug\Calc
 C:\Users\usuario\Downloads\Calculadora1\Calculadora1\Calculadora1\bin\Debug\Calculadora1.pdb
 C:\Users\usuario\Downloads\Calculadora1\Calculadora1\Calculadora1\obj\Debug\Calculadora1.exe
 C:\Users\usuario\Downloads\Calculadora1\Calculadora1\Calculadora1\obj\Debug\Calculadora1.pdb
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\bin\Debug\Calculadora1.exe.config
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora1.exe
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora1.pdb
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\bin\Debug\Calculadora1.exe
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\bin\Debug\Calculadora1.pdb
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora1.csprojResolveAssemblyReference.cache
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora.Calculadora.resources
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Alepaz\Desktop\progra4-guia2\Calculadora1\obj\Debug\Calculadora1.csproj.GenerateResource.Cache

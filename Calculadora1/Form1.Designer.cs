@@ -55,6 +55,7 @@
             this.button26 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtTexto = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             // 
             this.Pantalla.Location = new System.Drawing.Point(9, 7);
             this.Pantalla.Name = "Pantalla";
-            this.Pantalla.Size = new System.Drawing.Size(254, 23);
+            this.Pantalla.Size = new System.Drawing.Size(254, 27);
             this.Pantalla.TabIndex = 0;
             // 
             // button1
@@ -308,10 +309,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtTexto);
             this.panel1.Controls.Add(this.Pantalla);
             this.panel1.Location = new System.Drawing.Point(3, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 37);
+            this.panel1.Size = new System.Drawing.Size(270, 76);
             this.panel1.TabIndex = 29;
             // 
             // panel2
@@ -340,16 +342,23 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(3, 53);
+            this.panel2.Location = new System.Drawing.Point(3, 94);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 188);
             this.panel2.TabIndex = 30;
             // 
+            // txtTexto
+            // 
+            this.txtTexto.Location = new System.Drawing.Point(9, 40);
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(254, 27);
+            this.txtTexto.TabIndex = 1;
+            // 
             // Calculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 254);
+            this.ClientSize = new System.Drawing.Size(280, 293);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -394,6 +403,7 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtTexto;
     }
 }
 
