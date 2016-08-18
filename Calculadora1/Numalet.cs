@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
+
 namespace Calculadora
 {
     class Numalet
     {
+        //This class is creating by alejandro Hernandez, i just implementing just like dependencies
         #region Miembros estáticos
 
         private const int UNI = 0, DIECI = 1, DECENA = 2, CENTENA = 3;
